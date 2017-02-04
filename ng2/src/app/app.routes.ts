@@ -1,13 +1,21 @@
-import {Route, RouterModule, Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {InterpolationComponent} from './interpolation/interpolation.component';
-
-const interpolation: Route = {
-  path: 'interpolation',
-  component: InterpolationComponent
-};
+import {ChangeDetectComponent} from './change-detect/change-detect.component';
+import {BindingComponent} from './binding/binding';
 
 const routes: Routes = [
-  interpolation
+  {
+    path: 'interpolation',
+    component: InterpolationComponent
+  },
+  {
+    path: 'changedetect',
+    component: ChangeDetectComponent
+  },
+  {
+    path: 'binding',
+    component: BindingComponent
+  }
 ];
 
 export const routing = RouterModule.forRoot(routes);
