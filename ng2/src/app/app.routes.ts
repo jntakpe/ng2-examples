@@ -2,6 +2,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {InterpolationComponent} from './interpolation/interpolation.component';
 import {ChangeDetectComponent} from './change-detect/change-detect.component';
 import {BindingComponent} from './binding/binding';
+import {EventsComponent} from './events/events';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'binding',
     component: BindingComponent
+  },
+  {
+    path: 'events',
+    component: EventsComponent
   }
 ];
 

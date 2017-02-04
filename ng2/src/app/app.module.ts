@@ -8,13 +8,15 @@ import {InterpolationComponent} from './interpolation/interpolation.component';
 import {routing} from './app.routes';
 import {ChangeDetectComponent} from './change-detect/change-detect.component';
 import {BindingComponent} from './binding/binding';
+import {EventsComponent} from './events/events';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
     ChangeDetectComponent,
-    BindingComponent
+    BindingComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
