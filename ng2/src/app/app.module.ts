@@ -12,6 +12,7 @@ import {EventsComponent} from './events/events';
 import {LocalVarComponent} from './local-var/local-var.component';
 import {StructComponent} from './struct/struct';
 import {DirTplComponent} from './dirtpl/dir-tpl.component';
+import {PipesComponent} from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {DirTplComponent} from './dirtpl/dir-tpl.component';
     EventsComponent,
     LocalVarComponent,
     StructComponent,
-    DirTplComponent
+    DirTplComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
