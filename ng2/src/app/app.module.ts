@@ -9,6 +9,9 @@ import {routing} from './app.routes';
 import {ChangeDetectComponent} from './change-detect/change-detect.component';
 import {BindingComponent} from './binding/binding';
 import {EventsComponent} from './events/events';
+import {LocalVarComponent} from './local-var/local-var.component';
+import {StructComponent} from './struct/struct';
+import {DirTplComponent} from './dirtpl/dir-tpl.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {EventsComponent} from './events/events';
     InterpolationComponent,
     ChangeDetectComponent,
     BindingComponent,
-    EventsComponent
+    EventsComponent,
+    LocalVarComponent,
+    StructComponent,
+    DirTplComponent
   ],
   imports: [
     BrowserModule,
