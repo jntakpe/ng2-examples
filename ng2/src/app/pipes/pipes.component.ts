@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
 @Component({
   selector: 'app-pipes',
   template: `
@@ -22,6 +23,8 @@ import {Component} from '@angular/core';
     <p>{{ today | date:'longDate'}}</p> <!-- February 5, 2017 -->
     <p>{{ today | date:'HH:mm:ss'}}</p> <!-- 13:48:43 -->
     <p>{{ today | date:'shortTime'}}</p> <!-- 1:48 PM -->
+    <p> {{usersName$ | async}}</p>
+    <p> {{today | fromNow}}</p>
   `
 })
 export class PipesComponent {
@@ -32,4 +35,9 @@ export class PipesComponent {
     {name: 'Julie', gender: 'female', skills: ['Angular', 'React', 'JavaEE']}
   ];
   today: Date = new Date();
+  usersName$: Observable<string>;
+
+  constructor() {
+    this.usersName$ = Observable.zip(Observable.timer(0, 1000), Observable.from(this.users).repeat(100).map(u => u.name), (t, n) => n);
+  }
 }

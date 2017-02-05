@@ -13,6 +13,7 @@ import {LocalVarComponent} from './local-var/local-var.component';
 import {StructComponent} from './struct/struct';
 import {DirTplComponent} from './dirtpl/dir-tpl.component';
 import {PipesComponent} from './pipes/pipes.component';
+import {FromNowPipe} from './pipes/from-now.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {PipesComponent} from './pipes/pipes.component';
     LocalVarComponent,
     StructComponent,
     DirTplComponent,
-    PipesComponent
+    PipesComponent,
+    FromNowPipe
   ],
   imports: [
     BrowserModule,
