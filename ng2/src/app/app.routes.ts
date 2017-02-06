@@ -6,6 +6,7 @@ import {EventsComponent} from './events/events';
 import {LocalVarComponent} from './local-var/local-var.component';
 import {StructComponent} from './struct/struct';
 import {DirTplComponent} from './dirtpl/dir-tpl.component';
+import {DiComponent} from './di/di.component';
 import {PipesComponent} from './pipes/pipes.component';
 
 const routes: Routes = [
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'pipes',
     component: PipesComponent
+  },
+  {
+    path: 'di',
+    component: DiComponent
   }
 ];
 

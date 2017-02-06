@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
@@ -14,6 +14,8 @@ import {StructComponent} from './struct/struct';
 import {DirTplComponent} from './dirtpl/dir-tpl.component';
 import {PipesComponent} from './pipes/pipes.component';
 import {FromNowPipe} from './pipes/from-now.pipe';
+import {DiComponent} from './di/di.component';
+import {GithubService} from './github.service';
 
 @NgModule({
   declarations: [
@@ -26,15 +28,19 @@ import {FromNowPipe} from './pipes/from-now.pipe';
     StructComponent,
     DirTplComponent,
     PipesComponent,
-    FromNowPipe
+    FromNowPipe,
+    DiComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [
+    GithubService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
