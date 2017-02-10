@@ -16,6 +16,10 @@ import {PipesComponent} from './pipes/pipes.component';
 import {FromNowPipe} from './pipes/from-now.pipe';
 import {DiComponent} from './di/di.component';
 import {GithubService} from './github.service';
+import {TestComponent} from './component/test.component';
+import {LogDirective} from './component/log.directive';
+import {ItemComponent} from './component/item.component';
+import {GeneratedComponent} from './generated/generated.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import {GithubService} from './github.service';
     DirTplComponent,
     PipesComponent,
     FromNowPipe,
-    DiComponent
+    DiComponent,
+    TestComponent,
+    LogDirective,
+    ItemComponent,
+    GeneratedComponent
   ],
   imports: [
     BrowserModule,

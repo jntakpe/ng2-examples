@@ -8,6 +8,8 @@ import {StructComponent} from './struct/struct';
 import {DirTplComponent} from './dirtpl/dir-tpl.component';
 import {DiComponent} from './di/di.component';
 import {PipesComponent} from './pipes/pipes.component';
+import {TestComponent} from './component/test.component';
+import {GeneratedComponent} from './generated/generated.component';
 
 const routes: Routes = [
   {
@@ -45,6 +47,14 @@ const routes: Routes = [
   {
     path: 'di',
     component: DiComponent
+  },
+  {
+    path: 'comp',
+    component: TestComponent
+  },
+  {
+    path: 'generated',
+    component: GeneratedComponent
   }
 ];
 
