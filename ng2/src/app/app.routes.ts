@@ -10,6 +10,7 @@ import {DiComponent} from './di/di.component';
 import {PipesComponent} from './pipes/pipes.component';
 import {TestComponent} from './component/test.component';
 import {GeneratedComponent} from './generated/generated.component';
+import {GithubComponent} from './github/github.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: 'generated',
     component: GeneratedComponent
+  },
+  {
+    path: 'github',
+    component: GithubComponent
   }
 ];
 

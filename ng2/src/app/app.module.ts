@@ -20,6 +20,7 @@ import {TestComponent} from './component/test.component';
 import {LogDirective} from './component/log.directive';
 import {ItemComponent} from './component/item.component';
 import {GeneratedComponent} from './generated/generated.component';
+import {GithubComponent} from './github/github.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {GeneratedComponent} from './generated/generated.component';
     TestComponent,
     LogDirective,
     ItemComponent,
-    GeneratedComponent
+    GeneratedComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
