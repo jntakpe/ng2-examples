@@ -21,6 +21,7 @@ import {LogDirective} from './component/log.directive';
 import {ItemComponent} from './component/item.component';
 import {GeneratedComponent} from './generated/generated.component';
 import {GithubComponent} from './github/github.component';
+import {TplFormComponent} from './tpl-form/tpl-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {GithubComponent} from './github/github.component';
     LogDirective,
     ItemComponent,
     GeneratedComponent,
-    GithubComponent
+    GithubComponent,
+    TplFormComponent
   ],
   imports: [
     BrowserModule,
