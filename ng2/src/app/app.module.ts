@@ -22,6 +22,7 @@ import {ItemComponent} from './component/item.component';
 import {GeneratedComponent} from './generated/generated.component';
 import {GithubComponent} from './github/github.component';
 import {TplFormComponent} from './tpl-form/tpl-form.component';
+import {ReactFormComponent} from './react-form/react-form.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {TplFormComponent} from './tpl-form/tpl-form.component';
     ItemComponent,
     GeneratedComponent,
     GithubComponent,
-    TplFormComponent
+    TplFormComponent,
+    ReactFormComponent
   ],
   imports: [
     BrowserModule,

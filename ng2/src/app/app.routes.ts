@@ -12,6 +12,7 @@ import {TestComponent} from './component/test.component';
 import {GeneratedComponent} from './generated/generated.component';
 import {GithubComponent} from './github/github.component';
 import {TplFormComponent} from './tpl-form/tpl-form.component';
+import {ReactFormComponent} from './react-form/react-form.component';
 
 const routes: Routes = [
   {
@@ -65,6 +66,10 @@ const routes: Routes = [
   {
     path: 'tpl-form',
     component: TplFormComponent
+  },
+  {
+    path: 'react-form',
+    component: ReactFormComponent
   }
 ];
 
