@@ -23,6 +23,7 @@ import {GeneratedComponent} from './generated/generated.component';
 import {GithubComponent} from './github/github.component';
 import {TplFormComponent} from './tpl-form/tpl-form.component';
 import {ReactFormComponent} from './react-form/react-form.component';
+import {ValidFormComponent} from './valid-form/valid-form.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {ReactFormComponent} from './react-form/react-form.component';
     GeneratedComponent,
     GithubComponent,
     TplFormComponent,
-    ReactFormComponent
+    ReactFormComponent,
+    ValidFormComponent
   ],
   imports: [
     BrowserModule,
