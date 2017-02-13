@@ -4,7 +4,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   selector: 'app-generated',
   templateUrl: './generated.component.html',
   styleUrls: ['./generated.component.css'],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class GeneratedComponent implements OnInit {
 
